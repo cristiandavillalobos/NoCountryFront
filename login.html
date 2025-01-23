@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Agropecuarios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navegación">
+      <h3>Productos Agropecuarios</h3>
+      <button class="hamburguesa" aria-label="Abrir menú">
+        <img src="./assets/icon/menu.png" alt="menu">
+      </button>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="">Tienda</a></li>
+        <li><a href="">Carrito</a></li>
+        <li><a href="#">Inicio de sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+        <h1>Productos Agropecuarios</h1>
+        <div class="tabs">
+          <button class="tab-button active" data-target="login-form">Iniciar sesión</button>
+          <button class="tab-button" data-target="register-form">Registro</button>
+        </div>
+        <div class="forms">
+          <!-- Formulario de inicio de sesión -->
+          <form id="login-form" class="form active">
+            <h2>Iniciar sesión</h2>
+            <label for="email">Correo/Nombre de usuario</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+            <button class="btn-login" type="submit">Entrar</button>
+          </form>
+    
+          <!-- Formulario de registro -->
+          <form id="register-form" class="form">
+            <h2>Registro</h2>
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email-register">Correo</label>
+            <input type="email" id="email-register" name="email" required>
+            <label for="password-register">Contraseña</label>
+            <input type="password" id="password-register" name="password" required>
+            <button class="btn-login" type="submit">Registrar</button>
+          </form>
+        </div>
+      </div>
+
+  </main>
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+</html>
